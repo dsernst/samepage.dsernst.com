@@ -40,7 +40,16 @@ export function HowItWorks() {
           understating your interest — honesty is the dominant strategy.
         </FaqItem>
         <FaqItem question="Is anything stored?">
-          Answers travel directly peer-to-peer between devices, and are never stored or shared.
+          Answers travel directly peer-to-peer between devices, and are never stored or shared.{' '}
+          <a
+            href="https://github.com/dsernst/samepage.dsernst.com"
+            target="_blank"
+            className="text-brand no-underline hover:underline"
+            rel="noopener noreferrer"
+          >
+            Open source
+          </a>
+          .
         </FaqItem>
         <FaqItem question="Can I use this with someone else too?">
           Go for it — it&apos;s free. Each link creates its own private room, so different
