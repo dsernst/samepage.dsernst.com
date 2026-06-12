@@ -4,7 +4,9 @@ import { AxisSlider } from './AxisSlider'
 export function AxisSliders() {
   return (
     <>
-      <p className="axes-label">Your interest levels</p>
+      <p className="mb-7 text-[11px] font-normal tracking-[0.14em] text-muted uppercase">
+        Your interest levels
+      </p>
       {AXES.map((axis, i) => (
         <AxisSlider
           key={axis.name}
