@@ -1,9 +1,9 @@
-'use client';
+'use client'
 
-import { useState } from 'react';
+import { useState } from 'react'
 
 export function ShareButton() {
-  const [showNote, setShowNote] = useState(false);
+  const [showNote, setShowNote] = useState(false)
 
   return (
     <div className="share-top">
@@ -14,5 +14,5 @@ export function ShareButton() {
         Just a mockup for now — link generation coming soon.
       </div>
     </div>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import { AXES } from '@/lib/constants';
-import { AxisSlider } from './AxisSlider';
+import { AXES } from '@/lib/constants'
+import { AxisSlider } from './AxisSlider'
 
 export function AxisSliders() {
   return (
@@ -14,5 +14,5 @@ export function AxisSliders() {
         />
       ))}
     </>
-  );
+  )
 }
