@@ -22,7 +22,9 @@ export function RevealResults({
         </p>
       ) : (
         <>
-          <h3 className="mb-4 text-center font-serif text-lg text-ink">Where you&apos;re on the same page</h3>
+          <h3 className="mb-4 text-center font-serif text-lg text-ink">
+            Where we&apos;re on the same page
+          </h3>
           {(() => {
             const revealed = computeReveal(ownSubmission, otherSubmission)
             if (revealed.length === 0)
@@ -35,7 +37,10 @@ export function RevealResults({
             return (
               <ul className="space-y-4">
                 {revealed.map(({ name, desc, score, label }) => (
-                  <li key={name} className="rounded-[3px] border border-border bg-[#efe9df] px-4 py-3">
+                  <li
+                    key={name}
+                    className="rounded-[3px] border border-border bg-[#efe9df] px-4 py-3"
+                  >
                     <div className="font-serif text-base text-ink">{name}</div>
                     <div className="mt-1 text-[13px] leading-normal text-[#7a766e]">{desc}</div>
                     <div className="mt-2 flex items-center justify-between">
