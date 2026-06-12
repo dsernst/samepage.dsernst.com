@@ -36,7 +36,7 @@ export function AxisSlider({ name, desc, showDivider }: AxisSliderProps) {
           step={0.01}
           value={value}
           id={`slider-${id}`}
-          className="range-slider"
+          className="range-slider block h-[3px] w-full cursor-pointer appearance-none rounded-sm outline-none"
           style={{ background: sliderFill(value) }}
           onChange={(e) => setValue(parseFloat(e.target.value))}
           onMouseUp={snap}

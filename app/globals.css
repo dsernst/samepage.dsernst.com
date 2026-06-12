@@ -17,23 +17,7 @@
   --color-axis-desc: #7a766e;
 }
 
-@layer base {
-  ::selection {
-    background-color: var(--color-brand);
-    color: var(--color-cream);
-  }
-
-  ::-moz-selection {
-    background-color: var(--color-brand);
-    color: var(--color-cream);
-  }
-}
-
 @layer components {
-  .range-slider {
-    @apply block h-[3px] w-full cursor-pointer appearance-none rounded-sm outline-none;
-  }
-
   .range-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 26px;

@@ -25,7 +25,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${playfair.variable} bg-cream text-ink`}>
+    <html
+      lang="en"
+      className={`${dmSans.variable} ${playfair.variable} bg-cream text-ink selection:bg-brand selection:text-cream`}
+    >
       <body className="min-h-screen bg-cream p-0 font-sans font-light">{children}</body>
     </html>
   )
