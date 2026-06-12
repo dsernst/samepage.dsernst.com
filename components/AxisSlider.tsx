@@ -4,7 +4,6 @@ import { useCallback, useState } from 'react';
 import { LABELS } from '@/lib/constants';
 
 type AxisSliderProps = {
-  id: string;
   name: string;
   desc: string;
   showDivider: boolean;
@@ -16,7 +15,8 @@ function sliderFill(val: number) {
   return `linear-gradient(to right, ${c} ${pct}%, #d4cec4 ${pct}%)`;
 }
 
-export function AxisSlider({ id, name, desc, showDivider }: AxisSliderProps) {
+export function AxisSlider({ name, desc, showDivider }: AxisSliderProps) {
+  const id = name.toLowerCase();
   const [value, setValue] = useState(0);
   const display = Math.round(value);
 

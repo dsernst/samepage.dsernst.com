@@ -7,8 +7,7 @@ export function AxisSliders() {
       <p className="axes-label">Your interest levels</p>
       {AXES.map((axis, i) => (
         <AxisSlider
-          key={axis.id}
-          id={axis.id}
+          key={axis.name}
           name={axis.name}
           desc={axis.desc}
           showDivider={i < AXES.length - 1}
