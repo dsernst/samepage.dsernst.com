@@ -16,7 +16,6 @@ function sliderFill(val: number) {
 }
 
 export function AxisSlider({ name, desc, showDivider }: AxisSliderProps) {
-  const id = name.toLowerCase()
   const [value, setValue] = useState(0)
   const display = Math.round(value)
 
@@ -35,7 +34,7 @@ export function AxisSlider({ name, desc, showDivider }: AxisSliderProps) {
           max={7}
           step={0.01}
           value={value}
-          id={`slider-${id}`}
+          id={`slider-${name.toLowerCase()}`}
           className="range-slider block h-[3px] w-full cursor-pointer appearance-none rounded-sm outline-none"
           style={{ background: sliderFill(value) }}
           onChange={(e) => setValue(parseFloat(e.target.value))}
