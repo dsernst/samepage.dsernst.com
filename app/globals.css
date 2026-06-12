@@ -7,6 +7,8 @@
   --color-cream: #f5f0e8;
   --color-ink: #1a1a18;
   --color-brand: #2d5a3d;
+  --color-brand-hover: #3d7a53;
+  --color-brand-active: #1f3f2b;
   --color-body: #5a5650;
   --color-muted: #8a867e;
   --color-border: #d4cec4;
@@ -22,51 +24,6 @@
     background-color: var(--color-brand);
     color: var(--color-cream);
   }
-}
-
-main {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 28px;
-}
-
-.share-top {
-  margin-bottom: 36px;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #2d5a3d;
-  color: #f5f0e8;
-  font-family: var(--font-dm-sans), sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 13px 28px;
-  border: none;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: background 0.2s;
-}
-
-.btn:hover {
-  background-color: #3d7a53;
-}
-.btn:active {
-  background-color: #1f3f2b;
-}
-
-.mockup-note {
-  display: none;
-  font-size: 13px;
-  color: #8a867e;
-  margin-top: 10px;
-  font-style: italic;
-}
-
-.mockup-note.visible {
-  display: block;
 }
 
 .how-it-works {

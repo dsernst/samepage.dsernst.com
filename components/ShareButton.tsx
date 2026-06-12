@@ -6,13 +6,18 @@ export function ShareButton() {
   const [showNote, setShowNote] = useState(false)
 
   return (
-    <div className="share-top">
-      <button className="btn" onClick={() => setShowNote(true)}>
+    <div className="mb-9">
+      <button
+        className="inline-block cursor-pointer rounded-sm border-none bg-brand px-7 py-[13px] font-sans text-[13px] font-medium tracking-[0.06em] text-cream uppercase transition-colors hover:bg-brand-hover active:bg-brand-active"
+        onClick={() => setShowNote(true)}
+      >
         Get a shareable link →
       </button>
-      <div className={`mockup-note${showNote ? ' visible' : ''}`}>
-        Just a mockup for now — link generation coming soon.
-      </div>
+      {showNote && (
+        <p className="mt-2.5 text-[13px] text-muted italic">
+          Just a mockup for now — link generation coming soon.
+        </p>
+      )}
     </div>
   )
 }

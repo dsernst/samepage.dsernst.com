@@ -27,7 +27,7 @@ export default function Home() {
         </p>
       </header>
 
-      <main>
+      <main className="mx-auto max-w-[600px] px-7">
         <ShareButton />
         <HowItWorks />
         <AxisSliders />
