@@ -12,5 +12,7 @@ export function computeReveal(own: AxisAnswers, other: AxisAnswers): RevealedAxi
   return AXES.map(({ name, desc }) => {
     const score = Math.min(own[name] ?? 0, other[name] ?? 0)
     return { name, desc, score, label: LABELS[score] }
-  }).filter(({ score }) => score > 0)
+  })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
 }
