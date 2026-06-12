@@ -8,6 +8,8 @@
   --color-ink: #1a1a18;
   --color-brand: #2d5a3d;
   --color-body: #5a5650;
+  --color-muted: #8a867e;
+  --color-border: #d4cec4;
 }
 
 @layer base {
@@ -20,24 +22,6 @@
     background-color: var(--color-brand);
     color: var(--color-cream);
   }
-}
-
-footer {
-  text-align: center;
-  font-size: 11px;
-  color: #8a867e;
-  max-width: 600px;
-  margin: 56px auto 0;
-  border-top: 1px solid #d4cec4;
-  padding: 56px 28px 56px;
-}
-
-footer a {
-  color: #2d5a3d;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
 }
 
 main {

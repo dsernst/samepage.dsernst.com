@@ -33,9 +33,14 @@ export default function Home() {
         <AxisSliders />
       </main>
 
-      <footer>
+      <footer className="mx-auto mt-14 max-w-[600px] border-t border-border px-7 py-14 text-center text-[11px] text-muted">
         made by{' '}
-        <a href="https://dsernst.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://dsernst.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-brand no-underline hover:underline"
+        >
           David
         </a>
       </footer>
