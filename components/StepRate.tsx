@@ -26,7 +26,7 @@ export function StepRate({
   return (
     <Step
       step={step}
-      title="Rate your interest"
+      title="Your Interest Levels"
       activeStep={activeStep}
       setActiveStep={setActiveStep}
       buttonText={hasSubmitted ? 'Submitted.' : 'Submit'}
