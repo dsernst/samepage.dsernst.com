@@ -7,8 +7,8 @@ export default function Home() {
     <>
       <header className="mx-auto max-w-[600px] px-7 pt-5">
         <div className="relative mb-10 flex justify-center py-2">
-          <div className="pointer-events-none absolute top-0 left-1/2 z-0 h-20 w-40 -translate-x-[80%] rounded-full bg-[radial-gradient(ellipse,rgba(45,90,61,0.38)_0%,transparent_70%)] blur-[32px]" />
-          <div className="pointer-events-none absolute top-[5px] left-1/2 z-0 h-[70px] w-[120px] -translate-x-[10%] rounded-full bg-[radial-gradient(ellipse,rgba(196,145,74,0.32)_0%,transparent_70%)] blur-[32px]" />
+          <div className="pointer-events-none absolute top-0 left-1/2 z-0 h-20 w-40 translate-x-[-80%] rounded-full bg-[radial-gradient(ellipse,rgba(45,90,61,0.38)_0%,transparent_70%)] blur-[32px]" />
+          <div className="pointer-events-none absolute top-[5px] left-1/2 z-0 h-[70px] w-[120px] translate-x-[-10%] rounded-full bg-[radial-gradient(ellipse,rgba(196,145,74,0.32)_0%,transparent_70%)] blur-[32px]" />
           <div className="relative z-10 font-serif text-[22px] font-medium tracking-[0.01em] text-ink">
             Same<span className="font-medium text-brand">Page</span>
           </div>
