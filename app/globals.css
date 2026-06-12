@@ -1,25 +1,24 @@
-::selection {
-  background: #2d5a3d;
-  color: #f5f0e8;
-}
-::-moz-selection {
-  background: #2d5a3d;
-  color: #f5f0e8;
-}
-:root {
-  color-scheme: light only;
-}
-html,
-body {
-  background-color: #f5f0e8 !important;
-  color: #1a1a18 !important;
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+
+  --color-cream: #f5f0e8;
+  --color-ink: #1a1a18;
+  --color-brand: #2d5a3d;
 }
 
-body {
-  font-family: var(--font-dm-sans), sans-serif;
-  font-weight: 300;
-  min-height: 100vh;
-  padding: 0;
+@layer base {
+  ::selection {
+    background-color: var(--color-brand);
+    color: var(--color-cream);
+  }
+
+  ::-moz-selection {
+    background-color: var(--color-brand);
+    color: var(--color-cream);
+  }
 }
 
 header {
