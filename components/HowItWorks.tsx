@@ -24,9 +24,9 @@ export function HowItWorks() {
         <FaqItem question="Why rate across multiple dimensions?">
           Real connections are multidimensional. Two people can be great intellectual sparring
           partners but terrible gym buddies. Or deeply emotionally close but professionally
-          incompatible. These seven cover common ways people want to spend time and life together
-          — keeping them separate lets you see <strong>where</strong> the overlap actually lives,
-          not just whether there&apos;s any.
+          incompatible. These seven cover common ways people want to spend time and life together —
+          keeping them separate lets you see <strong>where</strong> the overlap actually lives, not
+          just whether there&apos;s any.
         </FaqItem>
         <FaqItem question="Why does the list always include all seven?">
           The fixed list is the whole point.{' '}
