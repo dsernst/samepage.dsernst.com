@@ -8,7 +8,7 @@ export function ShareButton() {
   return (
     <div className="mb-9">
       <button
-        className="inline-block cursor-pointer rounded-sm border-none bg-brand px-7 py-[13px] font-sans text-[13px] font-medium tracking-[0.06em] text-cream uppercase transition-colors hover:bg-brand-hover active:bg-brand-active"
+        className="inline-block cursor-pointer rounded-sm border-none bg-brand px-7 py-[13px] font-sans text-[13px] font-medium tracking-[0.06em] text-cream uppercase transition-colors hover:bg-[#3d7a53] active:bg-[#1f3f2b]"
         onClick={() => setShowNote(true)}
       >
         Get a shareable link →

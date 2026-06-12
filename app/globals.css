@@ -7,14 +7,9 @@
   --color-cream: #f5f0e8;
   --color-ink: #1a1a18;
   --color-brand: #2d5a3d;
-  --color-brand-hover: #3d7a53;
-  --color-brand-active: #1f3f2b;
   --color-body: #5a5650;
   --color-muted: #8a867e;
   --color-border: #d4cec4;
-  --color-surface: #efe9df;
-  --color-faq: #3a3830;
-  --color-axis-desc: #7a766e;
 }
 
 @layer components {

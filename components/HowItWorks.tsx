@@ -7,7 +7,7 @@ function FaqItem({ question, children }: { question: string; children: React.Rea
       className={`border-t border-border py-3 ${toggleSummary} [&>summary]:text-[13px] [&>summary]:font-medium [&>summary]:text-ink`}
     >
       <summary>{question}</summary>
-      <p className="mt-2.5 text-[13px] leading-[1.7] text-faq [&_strong]:font-medium [&_strong]:text-ink">
+      <p className="mt-2.5 text-[13px] leading-[1.7] text-[#3a3830] [&_strong]:font-medium [&_strong]:text-ink">
         {children}
       </p>
     </details>
@@ -17,7 +17,7 @@ function FaqItem({ question, children }: { question: string; children: React.Rea
 export function HowItWorks() {
   return (
     <details
-      className={`mb-10 rounded-[3px] border border-border bg-surface ${toggleSummary} [&>summary]:px-4 [&>summary]:py-3.5 [&>summary]:text-[13px] [&>summary]:font-medium [&>summary]:tracking-[0.06em] [&>summary]:text-body [&>summary]:uppercase [&>summary::after]:text-lg`}
+      className={`mb-10 rounded-[3px] border border-border bg-[#efe9df] ${toggleSummary} [&>summary]:px-4 [&>summary]:py-3.5 [&>summary]:text-[13px] [&>summary]:font-medium [&>summary]:tracking-[0.06em] [&>summary]:text-body [&>summary]:uppercase [&>summary::after]:text-lg`}
     >
       <summary>How it works</summary>
       <div className="px-4 pb-2">

@@ -26,7 +26,7 @@ export function AxisSlider({ name, desc, showDivider }: AxisSliderProps) {
   return (
     <div className="mb-2">
       <div className="mb-1 font-serif text-lg font-normal text-ink">{name}</div>
-      <div className="mb-4 text-[13px] leading-normal text-axis-desc">{desc}</div>
+      <div className="mb-4 text-[13px] leading-normal text-[#7a766e]">{desc}</div>
       <div className="cursor-pointer py-2.5">
         <input
           type="range"
