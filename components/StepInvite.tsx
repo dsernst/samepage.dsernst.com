@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { guestLabel } from '@/lib/guests'
 import { Step } from './Step'
 
 type StepInviteProps = {
@@ -33,7 +34,6 @@ export function StepInvite({
 }: StepInviteProps) {
   const origin = useOrigin()
   const url = origin && roomId ? `${origin}/#${roomId}` : ''
-  const guests = subscriptionCount - 1
   const [copied, setCopied] = useState(false)
 
   const copyLink = async () => {
@@ -49,7 +49,7 @@ export function StepInvite({
       title="Invite"
       activeStep={activeStep}
       setActiveStep={setActiveStep}
-      right={guests > 0 ? `${guests} guest${guests === 1 ? '' : 's'}` : undefined}
+      right={guestLabel(subscriptionCount) ?? undefined}
       buttonText="Next"
     >
       <div className="mb-4 flex items-center justify-center text-center">

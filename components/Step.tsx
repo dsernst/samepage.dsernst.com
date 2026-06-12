@@ -26,25 +26,25 @@ export function Step({
   return (
     <div className="relative mb-3 w-full rounded-[3px] border border-border bg-[#efe9df]">
       <h3
-        className={`cursor-pointer px-4 py-3.5 font-medium select-none hover:bg-[#e8e2d8] ${
+        className={`flex cursor-pointer items-center justify-between gap-3 px-4 py-3.5 font-medium select-none hover:bg-[#e8e2d8] ${
           isOpen ? 'border-b border-border bg-[#e8e2d8]' : ''
         }`}
         onClick={() => setActiveStep(isOpen ? 0 : step)}
       >
-        <span
-          className={`mr-2 inline-block text-xs text-muted transition-transform duration-200 ${
-            isOpen ? 'rotate-90' : ''
-          }`}
-        >
-          ▶
+        <span className="flex min-w-0 items-center">
+          <span
+            className={`mr-2 inline-block text-xs text-muted transition-transform duration-200 ${
+              isOpen ? 'rotate-90' : ''
+            }`}
+          >
+            ▶
+          </span>
+          <span className="mr-2 text-[13px] tracking-[0.06em] text-body uppercase">
+            Step {step}
+          </span>
+          <span className="text-[13px] text-ink">{title}</span>
         </span>
-        <span className="mr-2 text-[13px] tracking-[0.06em] text-body uppercase">
-          Step {step}
-        </span>
-        <span className="text-[13px] text-ink">{title}</span>
-        {right && (
-          <span className="absolute top-3.5 right-4 text-xs font-medium text-brand">{right}</span>
-        )}
+        {right && <span className="shrink-0 text-xs font-medium text-brand">{right}</span>}
       </h3>
 
       {isOpen && (
