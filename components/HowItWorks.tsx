@@ -7,9 +7,9 @@ function FaqItem({ question, children }: { question: string; children: React.Rea
       className={`border-t border-border py-3 ${toggleSummary} [&>summary]:text-[13px] [&>summary]:font-medium [&>summary]:text-ink`}
     >
       <summary>{question}</summary>
-      <p className="mt-2.5 text-[13px] leading-[1.7] text-[#3a3830] [&_strong]:font-medium [&_strong]:text-ink">
+      <div className="mt-2.5 space-y-2 text-[13px] leading-[1.7] text-[#3a3830] [&_strong]:font-medium [&_strong]:text-ink">
         {children}
-      </p>
+      </div>
     </details>
   )
 }
@@ -32,6 +32,23 @@ export function HowItWorks() {
           The fixed list is the whole point.{' '}
           <strong>Please don&apos;t assume any category is specific to you.</strong> Everyone gets
           the same seven.
+        </FaqItem>
+        <FaqItem question="What if I'm not interested in a category right now? Does a low score mean I don't think much of them?">
+          <p>
+            Not necessarily. Each score is your <strong>actual interest</strong> — how excited you
+            are about them in that dimension,{' '}
+            <i>
+              <strong>combined</strong>
+            </i>{' '}
+            with whether you have room for it in your life right now.
+          </p>
+          <p>
+            Someone might be an ideal professional partner, but if you&apos;re already stretched too
+            thin, an honest score is a 0 or 1. Someone might be very attractive, but if you&apos;re
+            in a committed relationship, saying &quot;0 - Not interested&quot; isn&apos;t a verdict
+            on their qualities — it&apos;s just where the two of you match today.
+          </p>
+          <p>This also helps set more realistic expectations.</p>
         </FaqItem>
         <FaqItem question="How does the reveal work?">
           For each category, only the <strong>lower</strong> of your two scores is shown — to both
