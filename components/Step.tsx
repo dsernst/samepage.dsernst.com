@@ -26,8 +26,8 @@ export function Step({
   return (
     <div className="relative mb-3 w-full rounded-[3px] border border-border bg-[#efe9df]">
       <h3
-        className={`flex cursor-pointer items-center justify-between gap-3 px-4 py-3.5 font-medium select-none hover:bg-[#e8e2d8] ${
-          isOpen ? 'border-b border-border bg-[#e8e2d8]' : ''
+        className={`flex cursor-pointer items-center justify-between gap-3 px-4 py-3.5 font-medium select-none ${
+          isOpen ? 'border-b border-border bg-[#e8e2d8] hover:bg-[#e2dcd2]' : 'hover:bg-[#e8e2d8]'
         }`}
         onClick={() => setActiveStep(isOpen ? 0 : step)}
       >
