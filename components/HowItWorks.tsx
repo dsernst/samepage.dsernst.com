@@ -51,7 +51,7 @@ export function HowItWorks() {
           <p>
             Someone might be an ideal professional partner, but if you&apos;re already stretched too
             thin, an honest score is a 0 or 1. Someone might be very attractive, but if you&apos;re
-            in a committed relationship, saying &quot;0 - Not interested&quot; isn&apos;t a verdict
+            in an exclusive relationship, saying &quot;0 - Not interested&quot; isn&apos;t a verdict
             on their qualities — it&apos;s just where the two of you match today.
           </p>
           <p>This helps set realistic expectations.</p>
