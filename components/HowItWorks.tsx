@@ -19,11 +19,14 @@ export function HowItWorks() {
     <details
       className="group mb-10 w-full rounded-[3px] border border-border bg-[#efe9df] open:[&>summary]:border-b open:[&>summary]:border-border open:[&>summary]:bg-[#e8e2d8]"
     >
-      <summary className="flex cursor-pointer list-none items-center px-4 py-3.5 font-medium select-none hover:bg-[#e8e2d8] [&::-webkit-details-marker]:hidden">
-        <span className="mr-2 inline-block text-xs text-muted transition-transform duration-200 group-open:rotate-90">
-          ▶
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3.5 font-medium select-none hover:bg-[#e8e2d8] [&::-webkit-details-marker]:hidden">
+        <span className="flex min-w-0 items-center">
+          <span className="mr-2 inline-block text-xs text-muted transition-transform duration-200 group-open:rotate-90">
+            ▶
+          </span>
+          <span className="text-[13px] tracking-[0.06em] text-body uppercase">How it works</span>
         </span>
-        <span className="text-[13px] tracking-[0.06em] text-body uppercase">How it works</span>
+        <span className="shrink-0 text-xs text-muted group-open:hidden">6 FAQs</span>
       </summary>
       <div className="px-4 pb-2">
         <FaqItem question="Why rate across multiple dimensions?">
