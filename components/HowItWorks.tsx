@@ -46,13 +46,14 @@ export function HowItWorks() {
             <i>
               <strong>combined</strong>
             </i>{' '}
-            with whether you have room for it in your life right now.
+            with whether you have capacity for it in your life right now.
           </p>
           <p>
-            Someone might be an ideal professional partner, but if you&apos;re already stretched too
-            thin, an honest score is a 0 or 1. Someone might be very attractive, but if you&apos;re
-            in an exclusive relationship, saying &quot;0 - Not interested&quot; isn&apos;t a verdict
-            on their qualities — it&apos;s just where the two of you match today.
+            Someone might be an ideal professional partner, but if you&apos;re not looking for that
+            right now, an honest score is a 0 or 1. Someone might be very attractive, but if
+            you&apos;re in an exclusive relationship, saying &quot;0 - Not interested&quot;
+            isn&apos;t a verdict on their qualities — it&apos;s just where the two of you match
+            today.
           </p>
           <p>This helps set realistic expectations.</p>
         </FaqItem>
