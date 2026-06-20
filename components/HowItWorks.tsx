@@ -1,10 +1,10 @@
-const toggleSummary =
+const faqToggleSummary =
   '[&>summary::-webkit-details-marker]:hidden [&>summary]:flex [&>summary]:cursor-pointer [&>summary]:list-none [&>summary]:items-center [&>summary]:justify-between [&>summary]:select-none [&>summary::after]:font-light [&>summary::after]:text-muted [&>summary::after]:content-["+"] open:[&>summary::after]:content-["×"]'
 
 function FaqItem({ question, children }: { question: string; children: React.ReactNode }) {
   return (
     <details
-      className={`border-t border-border py-3 ${toggleSummary} [&>summary]:text-[13px] [&>summary]:font-medium [&>summary]:text-ink`}
+      className={`border-t border-border py-3 ${faqToggleSummary} [&>summary]:text-[13px] [&>summary]:font-medium [&>summary]:text-ink`}
     >
       <summary>{question}</summary>
       <div className="mt-2.5 space-y-2 text-[13px] leading-[1.7] text-[#3a3830] [&_strong]:font-medium [&_strong]:text-ink">
@@ -17,9 +17,14 @@ function FaqItem({ question, children }: { question: string; children: React.Rea
 export function HowItWorks() {
   return (
     <details
-      className={`mb-10 rounded-[3px] border border-border bg-[#efe9df] ${toggleSummary} [&>summary]:px-4 [&>summary]:py-3.5 [&>summary]:text-[13px] [&>summary]:font-medium [&>summary]:tracking-[0.06em] [&>summary]:text-body [&>summary]:uppercase [&>summary::after]:text-lg`}
+      className="group mb-10 w-full rounded-[3px] border border-border bg-[#efe9df] open:[&>summary]:border-b open:[&>summary]:border-border open:[&>summary]:bg-[#e8e2d8]"
     >
-      <summary>How it works</summary>
+      <summary className="flex cursor-pointer list-none items-center px-4 py-3.5 font-medium select-none hover:bg-[#e8e2d8] [&::-webkit-details-marker]:hidden">
+        <span className="mr-2 inline-block text-xs text-muted transition-transform duration-200 group-open:rotate-90">
+          ▶
+        </span>
+        <span className="text-[13px] tracking-[0.06em] text-body uppercase">How it works</span>
+      </summary>
       <div className="px-4 pb-2">
         <FaqItem question="Why rate across multiple dimensions?">
           Real connections are multidimensional. Two people can be great intellectual sparring
