@@ -77,7 +77,7 @@ export function StepInvite({
         ) : (
           <span className="text-sm text-muted">Loading…</span>
         )}
-        <div className="mt-3">
+        <div className="mt-3 flex flex-col items-center gap-2">
           <button
             className="cursor-pointer rounded-sm border border-border bg-cream px-4 py-2 text-[13px] text-ink hover:bg-[#faf6f0]"
             onClick={copyLink}
@@ -85,14 +85,15 @@ export function StepInvite({
           >
             {copied ? 'Copied!' : 'Copy link'}
           </button>
+          {url && (
+            <>
+              <span className="text-[11px] text-muted">or scan</span>
+              <div className="rounded-[3px] border border-border bg-cream p-1.5">
+                <QRCodeSVG value={url} size={96} bgColor="#f5f0e8" fgColor="#1a1a18" level="M" />
+              </div>
+            </>
+          )}
         </div>
-        {url && (
-          <div className="mt-4 flex justify-center">
-            <div className="rounded-[3px] border border-border bg-cream p-2">
-              <QRCodeSVG value={url} size={112} bgColor="#f5f0e8" fgColor="#1a1a18" level="M" />
-            </div>
-          </div>
-        )}
       </div>
     </Step>
   )
