@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { QRCodeSVG } from 'qrcode.react'
 import { guestLabel } from '@/lib/guests'
 import { Step } from './Step'
 
@@ -85,6 +86,13 @@ export function StepInvite({
             {copied ? 'Copied!' : 'Copy link'}
           </button>
         </div>
+        {url && (
+          <div className="mt-4 flex justify-center">
+            <div className="rounded-[3px] border border-border bg-cream p-2">
+              <QRCodeSVG value={url} size={112} bgColor="#f5f0e8" fgColor="#1a1a18" level="M" />
+            </div>
+          </div>
+        )}
       </div>
     </Step>
   )
