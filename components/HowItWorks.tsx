@@ -54,7 +54,7 @@ export function HowItWorks() {
             in a committed relationship, saying &quot;0 - Not interested&quot; isn&apos;t a verdict
             on their qualities — it&apos;s just where the two of you match today.
           </p>
-          <p>This also helps set more realistic expectations.</p>
+          <p>This helps set realistic expectations.</p>
         </FaqItem>
         <FaqItem question="How does the reveal work?">
           For each category, only the <strong>lower</strong> of your two scores is shown — to both
