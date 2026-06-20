@@ -6,13 +6,12 @@ import { RevealResults } from '@/components/RevealResults'
 import { StepInvite } from '@/components/StepInvite'
 import { StepRate } from '@/components/StepRate'
 import { emptyAnswers } from '@/lib/types'
-import { useInitialStep } from './room/useInitialStep'
 import { usePusherRoom } from './room/usePusherRoom'
 import { useRandomRoomId } from './room/useRandomRoomId'
 import { useRoomState } from './room/useRoomState'
 
 export function Home() {
-  const [activeStep, setActiveStep] = useState(1)
+  const [activeStep, setActiveStep] = useState(0)
   const [answers, setAnswers] = useState(emptyAnswers)
   const { roomId, assignNewRoomId } = useRandomRoomId()
   const {
@@ -23,8 +22,6 @@ export function Home() {
     onSubmit,
     onSubscriptionCountChange,
   } = useRoomState()
-
-  useInitialStep(setActiveStep)
 
   const { subscriptionCount } = usePusherRoom(
     roomId,
