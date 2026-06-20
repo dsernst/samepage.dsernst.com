@@ -4,10 +4,10 @@ const faqToggleSummary =
 function FaqItem({ question, children }: { question: string; children: React.ReactNode }) {
   return (
     <details
-      className={`border-t border-border py-3 ${faqToggleSummary} [&>summary]:text-[13px] [&>summary]:font-medium [&>summary]:text-ink`}
+      className={`border-t border-border ${faqToggleSummary} [&>summary]:px-4 [&>summary]:py-3.5 [&>summary]:text-[13px] [&>summary]:font-medium [&>summary]:text-ink [&>summary]:hover:bg-[#e8e2d8] open:[&>summary]:bg-[#e8e2d8]`}
     >
       <summary>{question}</summary>
-      <div className="mt-2.5 space-y-2 text-[13px] leading-[1.7] text-[#3a3830] [&_strong]:font-medium [&_strong]:text-ink">
+      <div className="space-y-2 px-4 pt-2.5 pb-3 text-[13px] leading-[1.7] text-[#3a3830] [&_strong]:font-medium [&_strong]:text-ink">
         {children}
       </div>
     </details>
@@ -16,9 +16,7 @@ function FaqItem({ question, children }: { question: string; children: React.Rea
 
 export function HowItWorks() {
   return (
-    <details
-      className="group mb-10 w-full rounded-[3px] border border-border bg-[#efe9df] open:[&>summary]:border-b open:[&>summary]:border-border open:[&>summary]:bg-[#e8e2d8]"
-    >
+    <details className="group mb-10 w-full rounded-[3px] border border-border bg-[#efe9df] open:[&>summary]:border-b open:[&>summary]:border-border open:[&>summary]:bg-[#e8e2d8]">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3.5 font-medium select-none hover:bg-[#e8e2d8] [&::-webkit-details-marker]:hidden">
         <span className="flex min-w-0 items-center">
           <span className="mr-2 inline-block text-xs text-muted transition-transform duration-200 group-open:rotate-90">
@@ -28,7 +26,7 @@ export function HowItWorks() {
         </span>
         <span className="shrink-0 text-xs text-muted group-open:hidden">6 FAQs</span>
       </summary>
-      <div className="px-4 pb-2">
+      <div>
         <FaqItem question="Why rate across multiple dimensions?">
           Real connections are multidimensional. Two people can be great intellectual sparring
           partners but terrible gym buddies. Or deeply emotionally close but professionally
